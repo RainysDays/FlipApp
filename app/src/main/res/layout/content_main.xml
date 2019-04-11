@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/foryou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For You" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/topcharts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Charts" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/editorschoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editor's Choice" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/earlyaccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Early Access" />
+    </android.support.design.widget.TabLayout>
+
+</android.support.design.widget.CoordinatorLayout>
