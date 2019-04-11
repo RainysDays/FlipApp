@@ -60,12 +60,6 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        viewPager = (ViewPager)findViewById(R.id.viewPager);
-//        setupViewPager(viewPager);
-//
-//        tabLayout = (TabLayout) findViewById(R.id.tab);
-//        tabLayout.setupWithViewPager(viewPager);
-
         viewPager = (ViewPager)findViewById(R.id.viewPager);
         tabLayout = (TabLayout)findViewById(R.id.tab);
 
@@ -73,48 +67,12 @@ public class MainActivity extends AppCompatActivity
         adapter.addFragment(new OneFragment(),"For You");
         adapter.addFragment(new TwoFragment(),"Top Charts");
         adapter.addFragment(new ThreeFragment(),"Categories");
+        adapter.addFragment(new FourFragment(),"Editors Choice");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
     }
 
-
-
-
-//    private void setupViewPager(ViewPager viewPager) {
-//        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-//        adapter.addFragment(new OneFragment(),"ONE");
-//        adapter.addFragment(new TwoFragment(),"TWO");
-//        adapter.addFragment(new ThreeFragment(),"THREE");
-//        viewPager.setAdapter(adapter);
-//    }
-//
-//
-//    class ViewPagerAdapter extends FragmentPagerAdapter{
-//        private final List<Fragment> mFragmentList = new ArrayList<>();
-//        private final List<String> mFragmentTitleList = new ArrayList<>();
-//        public ViewPagerAdapter(FragmentManager fm) {
-//            super(fm);
-//        }
-//
-//        @Override
-//        public Fragment getItem(int position) {
-//            return mFragmentList.get(position);
-//        }
-//
-//        @Override
-//        public int getCount() {
-//            return mFragmentList.size();
-//        }
-//        public void addFragment(Fragment fragment,String title){
-//            mFragmentList.add(fragment);
-//            mFragmentTitleList.add(title);
-//        }
-//        @Override
-//        public CharSequence getPageTitle(int position){
-//            return mFragmentTitleList.get(position);
-//        }
-//    }
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
