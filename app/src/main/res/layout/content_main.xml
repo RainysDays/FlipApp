@@ -21,40 +21,23 @@
         app:tabMode="scrollable">
 
         <android.support.design.widget.TabItem
-            android:id="@+id/foryou"
+            android:id="@+id/tab1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="For You" />
+            android:text="General" />
 
         <android.support.design.widget.TabItem
-            android:id="@+id/topcharts"
+            android:id="@+id/tab2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Top Charts" />
+            android:text="Bussiness" />
 
         <android.support.design.widget.TabItem
-            android:id="@+id/categories"
+            android:id="@+id/tab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Categories" />
+            android:text="Productivity" />
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/editorschoice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Editor's Choice" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/family"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Family" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/earlyaccess"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Early Access" />
     </android.support.design.widget.TabLayout>
 
 </android.support.design.widget.CoordinatorLayout>
